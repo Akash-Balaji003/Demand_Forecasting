@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import LeftPanel from '../components/LeftPanel';
 import { useUserContext } from '../contexts/UserContext'; // Import the custom hook
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import IndiaMap from "../components/IndiaMap";
 
 // Register necessary Chart.js components
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -60,7 +61,8 @@ const Home = () => {
                         </tbody>
                     </table>
                 </div>
-
+                {/* India Map Component */}
+                <IndiaMap /> 
             </div>
         </div>
     );
